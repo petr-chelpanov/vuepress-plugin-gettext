@@ -1,11 +1,10 @@
 const EOL = require('os').EOL;
-const chalk = require('chalk');
 const hasbin = require('hasbin').sync;
 const process = require('process');
 const util = require('util');
 const exec = require('child_process').exec;
 const asyncExec = util.promisify(exec);
-const {logger, path, fs} = require('@vuepress/shared-utils');
+const {logger, path, fs, chalk} = require('@vuepress/shared-utils');
 const gettextMarkdown = require('gettext-markdown');
 
 logger.setOptions({logLevel: 1});
